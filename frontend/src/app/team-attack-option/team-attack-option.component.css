@@ -1,0 +1,37 @@
+.mental-attack-button {
+    background-color: rgba(105, 41, 242, 1);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    width: 110px;
+}
+
+.strong-attack-button {
+    background-color: rgba(235, 96, 172, 0.41);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    width: 110px;
+}
+
+.fast-attack-button {
+    background-color: rgba(242, 75, 167, 0.78);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    width: 110px;
+}
+
+.select-enemy{
+    color: white;
+    font-family: "Londrina Solid";
+}
+
+/deep/ .mat-select-value{
+    color: white;
+    font-family: "Londrina Solid";
+}

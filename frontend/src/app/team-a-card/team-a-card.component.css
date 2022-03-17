@@ -1,0 +1,49 @@
+.team-a-card {
+    width: 210px;
+    height: 320px;
+    background-color: rgba(98, 106, 241, 0.74);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-image {
+    height: 120px;
+    width: 120px;
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.player-content{
+    text-align: center;
+}
+
+.player-name {
+    color: white;
+    font-size: 32px;
+    font-family: "Londrina Solid";
+}
+
+.player-hp {
+    color: white;
+    font-size: 32px;
+    font-family: "Londrina Solid";
+}
+
+.heart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.team-a-dead-card {
+    width: 210px;
+    height: 320px;
+    background-color: rgba(147, 147, 147, 1);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

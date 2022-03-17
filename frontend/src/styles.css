@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+@font-face {
+    font-family: "Londrina Solid";
+    src: local("Londrina Solid"), url(./assets/fonts/LondrinaSolid-Regular.ttf) format("truetype");
+}
+body { 
+    margin: 0; 
+    font-family: "Londrina Solid", "Helvetica Neue", sans-serif;
+    background-color: rgba(32, 2, 64, 1);
+}

@@ -1,0 +1,32 @@
+
+<mat-card class="team-a-card" *ngIf="player.hp > 1">
+    <mat-card-header>
+        <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + player.image.url + ')'}" class="header-image"></div>
+    </mat-card-header>
+    <mat-card-content class="player-content">
+        <p class="player-name">
+            {{player.name}}
+        </p>
+        <div class="hp-content">
+            <p class="player-hp">
+                <img src="/assets/heart.png" class="heart-icon" alt="HP"> {{player.hp}}
+            </p>
+        </div>
+    </mat-card-content>
+</mat-card>
+  
+<mat-card class="team-a-dead-card" *ngIf="player.hp < 1">
+    <mat-card-header>
+        <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + player.image.url + ')'}" class="header-image"></div>
+    </mat-card-header>
+    <mat-card-content class="player-content">
+        <p class="player-name">
+            {{player.name}}
+        </p>
+        <div class="hp-content">
+            <p class="player-hp">
+                DEAD
+            </p>
+        </div>
+    </mat-card-content>
+</mat-card>

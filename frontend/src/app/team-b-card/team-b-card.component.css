@@ -1,0 +1,39 @@
+.team-b-card {
+    width: 200px;
+    height: 140px;
+    background-color: rgba(105, 41, 242, 0.58);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.team-b-dead-card {
+    width: 200px;
+    height: 140px;
+    background-color: rgba(147, 147, 147, 1);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.player-content{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.player-name {
+    color: white;
+    font-size: 32px;
+    font-family: "Londrina Solid";
+}
+
+.player-hp {
+    color: white;
+    font-size: 32px;
+    font-family: "Londrina Solid";
+}
+
+.heart-icon {
+    width: 30px;
+    height: 30px;
+}

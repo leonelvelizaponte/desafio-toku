@@ -1,0 +1,12 @@
+
+
+.flash-loading {
+    width: 200px;
+    height: auto;
+}
+
+.creating-msg {
+    font-size: 30px;
+    font-family: "Londrina Solid";
+    color: white;
+}

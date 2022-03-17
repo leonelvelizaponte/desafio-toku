@@ -1,0 +1,109 @@
+.init-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.loading-team-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 64px;
+    font-family: "Londrina Solid";
+    color: white;
+}
+
+.title-content {
+    margin-bottom: 40px;
+}
+
+.description{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.description-content {
+    margin-bottom: 10px;
+}
+
+.begin-button {
+    background-color: rgba(242, 75, 167, 1);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    width: 110px;
+}
+
+.your-team-desc {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.team-desc {
+    font-size: 50px;
+    font-family: "Londrina Solid";
+    color: white;
+    margin-bottom: 50px;
+}
+
+.your-team {
+    display: flex;
+    justify-content: center;
+}
+
+.enemy-team {
+    display: flex;
+    justify-content: center;
+}
+
+.your-team-actions {
+    text-align: center;
+    margin-top: 50px;
+}
+.go-to-battle {
+    background-color: rgba(242, 75, 167, 0.78);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    width: 110px;
+}
+
+.new-team {
+    color: white;
+    font-family: "Londrina Solid";
+    width: 180px;
+}
+
+.battle-section{
+    margin-top: 30px;
+}
+
+.attack-action{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.battle-button {
+    background-color: rgba(242, 75, 167, 1);
+    color: white;
+    font-family: "Londrina Solid";
+    border-radius: 30px;
+    margin-bottom: 14px;
+    width: 180px;
+}
+
+.attack-description {
+    color: white;
+    font-family: "Londrina Solid";
+    font-size: 20px;
+}
+
+.final-loading {
+    width: 400px;
+    height: auto;
+}

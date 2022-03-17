@@ -1,0 +1,78 @@
+<!-- Landing page -->
+<section class="init-section" *ngIf="onBoardingFlag">
+  <div class="title-content">
+    <p class="title">Super FIGHT</p>
+  </div>
+  <div class="description-content">
+    <p class="description">Este juego consta en la pelea entre dos equipos generados</p>
+    <p class="description">aleatoriamente donde cada equipo esta conformado por 5 integrantes,</p>
+    <p class="description">pueden estar conformados por heroes y/o villanos.</p>
+  </div>
+  <br>
+  <button mat-raised-button class="begin-button" (click)="createTeam()">¡Empecemos!</button>
+  <br>
+</section>
+<!-- Creating team loading -->
+<section class="loading-team-section" *ngIf="creatingFlag">
+  <app-loading-teams></app-loading-teams>
+</section>
+<!-- Creating team loading -->
+<section class="loading-team-section" *ngIf="battleLoadingFlag">
+  <app-processing-battle></app-processing-battle>
+</section>
+<!-- Confirm team -->
+<section class="init-team" *ngIf="initTeamFlag">
+  <div class="your-team-desc">
+    <p class="team-desc">Tu equipo</p>
+  </div>
+  <div class="your-team">
+    <div *ngFor="let player of teamA; index as i" class="inline">
+      <app-team-a-card [player]="player" ></app-team-a-card>
+    </div>
+  </div>
+  <div class="your-team-actions">
+    <button mat-raised-button class="go-to-battle" (click)="letsBattle()">Ir a la batalla</button>
+    <br>
+    <button mat-button class="new-team" (click)="createTeam()">Generar otro equipo</button>
+  </div>
+</section>
+<!-- Battle Screen -->
+<section class="battle-section" *ngIf="battleFlag">
+  <div class="enemy-team">
+    <div *ngFor="let player of teamB; index as i" class="inline">
+      <app-team-b-card [player]="player" ></app-team-b-card>
+    </div>
+  </div>
+  <div class="attack-action">
+    <div class="attack-chat">
+      <p class="attack-description">1st Move: {{chat.firstAttack}}</p>
+      <p class="attack-description">2nd Move: {{chat.secondAttack}}</p>
+      <p class="attack-description">Extra: {{chat.infoAttack}} </p>
+    </div>
+  </div>
+  <div class="your-team">
+    <div *ngFor="let player of teamA; index as i" class="inline">
+      <app-team-a-card [player]="player" ></app-team-a-card>
+      <app-team-attack-option [player]="player" [ally]="teamA" [enemy]="teamB" [chat]="chat" (enemiesWin)="toggleEnemiesWin()" (alliesWin)="toggleAlliesWin()"> </app-team-attack-option>
+    </div>
+  </div>
+</section>
+<!-- WIN Screen -->
+<section class="enemy-win" *ngIf="enemyTeamWin">
+  <div class="init-section">
+    <img src="/assets/loading/final.gif" class="final-loading" alt="end">
+    <p class="title">Enemy Team WIN! LOSER!</p>
+    <br>
+    <button mat-raised-button class="begin-button" (click)="playAgain()">Play again!</button>
+    <br>
+  </div>
+</section>
+<section class="ally-win" *ngIf="allyTeamWin">
+  <div class="init-section">
+    <img src="/assets/loading/final.gif" class="final-loading" alt="end">
+    <p class="title">CONGRATS!! You WIN!</p>
+    <br>
+    <button mat-raised-button class="begin-button" (click)="playAgain()">Play again!</button>
+    <br>
+  </div>
+</section>

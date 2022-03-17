@@ -1,0 +1,18 @@
+
+<div *ngIf="player.hp > 1">
+  <mat-form-field appearance="fill" class="select-enemy">
+    <mat-label class="select-enemy">Select enemy</mat-label>
+    <mat-select [(ngModel)]="enemySelected" name="enemySelected" class="select-enemy">
+      <mat-option *ngFor="let enemy of enemies; index as i;" [value]="i">
+        {{i}}-{{enemy}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button class="mental-attack-button" (click)="mentalAttack()">Mental Attack</button>
+  <br>
+  <button mat-raised-button class="strong-attack-button" (click)="strongAttack()">Strong Attack</button>
+  <br>
+  <button mat-raised-button class="fast-attack-button" (click)="fastAttack()">Fast Attack</button>
+  <br>
+</div>
